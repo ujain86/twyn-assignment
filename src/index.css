@@ -1,0 +1,148 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#body{
+  display: flex;
+  flex-direction: column;
+}
+
+#sidebar{
+  height: 100vh;
+  border-radius: 40px;
+  background-color: rgb(190, 42, 91);
+  position: absolute;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-button{
+  width: 90%;
+  margin: 20px;
+  background-color: transparent ;
+  color: white;
+
+}
+
+.nav-button:hover{
+  background-color: rgb(100, 12, 41);
+
+}
+
+.collapse{
+  width: 5vw;
+}
+
+.expand{
+  width: 20vw;
+  
+}
+
+#navbar{
+  height: 5vh;
+  margin-left: 15vw;
+  color: purple;
+}
+
+#main{
+  height: 80vh;
+  width: 90vw;
+  margin: 10vh 0 0 5vw;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.section{
+  height: 30%;
+  width: 70vw;
+  background-color: rgb(252, 252, 252);
+  margin: 10px 20px;
+  border-radius: 40px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  /* display: grid;
+  grid-template-rows: 20% 1% 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "heading heading heading"
+  "line line line"
+  "image image image"; */
+
+
+}
+
+.heading{
+  /* grid-area: heading; */
+  color: rgb(190, 42, 91);
+  padding: 0;
+  /* box-sizing: border-box; */
+  height: 20%;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+}
+
+.line{
+  /* grid-area: line;style={{ border: "1px solid purple", margin: "5px 30px" */
+  /* margin: 1px 30px; */
+  border: 1px solid rgb(190, 42, 91);
+  box-sizing: border-box; 
+  height: 0%;
+}
+
+.graph-container{
+  /* border: 1px  solid red; */
+  height: 79%;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  box-sizing: border-box;
+
+}
+
+.graph{
+  height: 100%;
+  width: 30%;
+  background-color: white;
+  margin: 0px 10px 15px 10px;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  /* grid-area: image; */
+}
+
+@media(max-width: 600px){
+  .section{
+    height: 90vh;
+    width: 90%;
+    /* background-color: blue; */
+    /* flex-direction: column; */
+  }
+  
+  .heading{
+    height: 5%;
+  }
+  .graph-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .graph{
+    height: 30%;
+    width: 90%;
+  }
+
+  #sidebar{
+    display: none;
+  }
+}
